@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container" id="container">
+      <div class="form-container sign-up-container">
+      </div>
+      <div class="form-container sign-in-container">
+         <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+            <h1>Sign in</h1>
+            <div class="social-container">
+               <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+               <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+               <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <input type="password" id="password" placeholder="Password" required maxlength="20" class="box" />
+            <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()"> Show Password
+            <button type="button" name="submit" class="btn" onclick="login()">Sign In</button>
+            <p id="error-message" style="color: red;"></p>
+         </form>
+      </div>
+   </div>
+   <script src="script.js"></script>
